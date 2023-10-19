@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless World</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<link rel="icon" href="images/logo-1.png">
+<body>
+    <header class="container-fluid fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo2.webp" class="img-fluid" width="50px" alt=""><span class="text-warning">Wireless
+                World</span>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <form class="d-flex">
+                  <div class="input-group">
+                    <input type="text" placeholder="Search.." class="form-control">
+                    <input type="text" placeholder="Enter Location" class="form-control">
+                    <button class="input-group-text btn btn-outline-warning"><i class="fa fa-search"></i></button>
+                  </div>
+                </form>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="btn btn-warning rounded-pill m-1" href="login.html">Log In <i class="fa fa-user-circle"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-outline-warning rounded-pill m-1" href="signup.html">Sign Up <i
+                      class="fa fa-user-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto my-lg-0">
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-dark" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-dark" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-dark" href="facilities.html">FACILITIES</a>
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-dark" href="contectus.html">CONTACT US</a>
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-dark" href="franchise.html">FRANCHISE</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link text-dark" href="form.html">SHOPPING CART</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link  text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    TOP CATAGORIES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="samsung.html">Sumsung </a></li>
+                    <li><a class="dropdown-item" href="iphone.html">Apple </a></li>
+                    <li><a class="dropdown-item" href="noika.html">Nokia </a></li>
+                    <li><a class="dropdown-item" href="lg.html">LG </a></li>
+                    <li><a class="dropdown-item" href="moto.html">Motorola </a></li>
+                    <li><a class="dropdown-item" href="alcatel.html">Alcatel </a></li>
+                    <li><a class="dropdown-item" href="cat.html">CAT </a></li>
+                    <li><a class="dropdown-item" href="sony.html">Sony </a></li>
+                    <li><a class="dropdown-item" href="htc.html">HTC </a></li>
+                    <li><a class="dropdown-item" href="balck.html">Blackberry </a></li>
+                    <li><a class="dropdown-item" href="huwwie.html">Huawei </a></li>
+                    <li><a class="dropdown-item" href="zte.html">ZTE </a></li>
+                    <li><a class="dropdown-item" href="redmi.html">Xiaomi </a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item mx-auto">
+                  <div class="dropdown">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-cart-shopping"><span class="badge bg-dark text-warning"><b id="c">0</b></span></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <h3 class="text-center bg-dark text-warning">Add To Cart</h3>
+                      <div class="bg-warning" style="width: 300px;height: 300px;padding: 20px;" id="cart">
+                        <h5>Products Item</h5>
+                        <ol id="hello"></ol>
+                      </div>
+                      <footer class="footer bg-dark p-2">
+                        <button class="btn btn-danger form-control rounded-pill my-1"><a href="">Checkout</a></button>
+                        <button class="btn btn-outline-warning form-control rounded-pill my-1">View Cart</button>
+                      </footer>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="ms-auto">
+                <img src="images/bismillah.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+    <div class="container bg-light pt-5">
+        <form class="row py-5 pt-5">
+            <h1 class="pt-5"><i class="fa fa-shopping-cart"></i> Shopping Cart</h1>
+            <hr>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your First Name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Enter Your Last Name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email">
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Enter Your Password">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Address">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Enter Your City">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Payment Method</label>
+              <select id="inputState" class="form-select">
+                <option selected>Credit Card</option>
+                <option>Jazz Cash</option>
+                <option>EasyPaisa</option>
+                <option>Cash On Delivery</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="000222">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12 p-4">
+              <button type="submit" class="form-control btn btn-outline-warning rounded-pill">Submit</button>
+            </div>
+          </form>
+    </div>
+
+    <footer class="container-fluid bg-dark ">
+        <div class="row">
+    
+          <div class="col-sm-2 bg-dark text-light">
+            <h5 class="text-warning"><i>About</i></h5>
+    
+            <p>About us</p>
+            <p>Telemart corporate</p>
+            <p>Takaful islamic insurance</p>
+            <p>Careers</p>
+    
+          </div>
+    
+          <div class="col-sm-2 bg-dark text-light ">
+            <h5 class="text-warning"><i>Help</i></h5>
+            <p>Payment information</p>
+            <p>Shiping information</p>
+            <p>Faqs</p>
+            <p>Telemart mart offline stores</p>
+            <p>Help desk / support</p>
+            <p>Smart phone financing</p>
+    
+          </div>
+    
+    
+          <div class="col-sm-2 bg-dark text-light">
+            <h5 class="text-warning"><i>Policy</i></h5>
+            <p>Return policy</p>
+            <p>Terms & Condition</p>
+            <p>Privacy</p>
+            <p>Warranty</p>
+            <p>price beating</p>
+    
+          </div>
+    
+    
+    
+    
+    
+    
+          <div class="col-sm-2 bg-dark text-light">
+    
+            <h5 class="text-warning"><i>Social</i></h5>
+    
+            <i class="fa-brands fa-square-facebook"> </i> Facebook
+            <br>
+            <i class="fa-brands fa-square-twitter"></i> Twitter
+            <br>
+            <i class="fa-brands fa-instagram"></i> Instagaram
+            <br>
+            <i class="fa-brands fa-snapchat"></i> Snapchat
+            <br>
+            <i class="fa-brands fa-youtube"></i> Youtube
+            <br>
+            <i class="fa-brands fa-tiktok"></i> Tiktok
+          </div>
+          <div class="col-sm-2 bg-dark text-light">
+            <h5 class="text-warning"><i>Free Buisness Services</i></h5>
+            <p>URL Shortner</p>
+            <p>Task Manager</p>
+            <p>ERP</p>
+          </div>
+    
+          <div class="col-sm-2 bg-dark text-light">
+            <h5 class="text-warning"><i>Registerd Adress</i></h5>
+            <p>Telemart pVT Limited</p>
+            <p>Suit 401-406, 4th Floor,Al-khaleej</p>
+            <p>Tower Plot#C-24 B.M.C.H.S Shaheed-e-Millat</p>
+            <p>Karachi Pakistan</p>
+          </div>
+        </div>
+        <div class="bg-warning p-2">
+          <p class="float-end"><a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-dark"></i></a></p>
+          <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </div>
+      </footer>
+</body>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+<script src="/fontawesome-free-6.4.2-web/js/all.js"></script>
+</html>

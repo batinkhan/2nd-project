@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireless World</title>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<link rel="icon" href="images/logo2.webp">
+
+<body>
+  <header class="container-fluid fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.webp" class="img-fluid" width="50px" alt=""><span class="text-warning">Wireless
+            World</span>
+        </a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <form class="d-flex">
+              <div class="input-group">
+                <input type="text" placeholder="Search.." class="form-control">
+                <input type="text" placeholder="Enter Location" class="form-control">
+                <button class="input-group-text btn btn-outline-warning"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="btn btn-warning rounded-pill m-1" href="login.html">Log In <i class="fa fa-user-circle"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-warning rounded-pill m-1" href="signup.html">Sign Up <i
+                  class="fa fa-user-plus"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto my-lg-0">
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="facilities.html">FACILITIES</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="contectus.html">CONTACT US</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="franchise.html">FRANCHISE</a>
+            </li>
+            <!-- <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="form.html">SHOPPING CART</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link  text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                TOP CATAGORIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="samsung.html">Sumsung </a></li>
+                <li><a class="dropdown-item" href="iphone.html">Apple </a></li>
+                <li><a class="dropdown-item" href="noika.html">Nokia </a></li>
+                <li><a class="dropdown-item" href="lg.html">LG </a></li>
+                <li><a class="dropdown-item" href="moto.html">Motorola </a></li>
+                <li><a class="dropdown-item" href="alcatel.html">Alcatel </a></li>
+                <li><a class="dropdown-item" href="cat.html">CAT </a></li>
+                <li><a class="dropdown-item" href="sony.html">Sony </a></li>
+                <li><a class="dropdown-item" href="htc.html">HTC </a></li>
+                <li><a class="dropdown-item" href="balck.html">Blackberry </a></li>
+                <li><a class="dropdown-item" href="huwwie.html">Huawei </a></li>
+                <li><a class="dropdown-item" href="zte.html">ZTE </a></li>
+                <li><a class="dropdown-item" href="redmi.html">Xiaomi </a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item mx-auto">
+              <div class="dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-cart-shopping"><span class="badge bg-dark text-warning"><b id="c">0</b></span></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <h3 class="text-center bg-dark text-warning">Add To Cart</h3>
+                  <div class="bg-warning" style="width: 300px;height: 300px;padding: 20px;" id="cart">
+                    <h5>Products Item</h5>
+                    <ol id="hello"></ol>
+                  </div>
+                  <footer class="footer bg-dark p-2">
+                     <a href="form.html">
+                      <button class="btn btn-danger form-control rounded-pill my-1">
+                       Checkout
+                      </button>
+                    </a>
+                    <button class="btn btn-outline-warning form-control rounded-pill my-1">View Cart</button>
+                  </footer>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <img src="images/bismillah.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- banner start -->
+  <section class="banner-wrapper pt-5">
+    <div class="container pt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-center text-lg-start order-2 order-lg-1 p-5">
+          <h3 class="m-0 pt-5 text-center">Buy Now and Pay Later at</h3>
+          <h1 class="text-warning m-0 pt-2 text-center">
+            Easy Monthly Installment
+          </h1>
+          <div class="text-center">
+            <a href="#phone">
+              <button class="btn btn-outline-warning rounded-pill mt-3">Shop Now</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 pt-5 order-1 order-lg-2 pt-5">
+          <img src="images/lg-1.jpg" class="img-fluid w-100" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner end -->
+  <section class="product py-3">
+    <div class="container-fluid">
+      <h1 class="py-5" id="phone">Online Shop</h1>
+      <img src="banner/banner1.png" class="img-fluid" width="100%" alt="">
+      <div class="row pt-5">
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img id="img" src="products/phone1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Xiaomi Redmi 12c (4GB,128GB) Dual Sim Without Official Warranty</p>
+              <span>33,499</span>
+              Xiaomi Redmi 12c - <input class="btn btn-outline-warning rounded-pill" id="input" type="button"
+                value="Add to Cart" onclick="add('Xiaomi Redmi 12c')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/phone2.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Infinix Hot 30 Play (4GB 64GB) Dual Sim With Official Warranty</p>
+              <span>32,999</span>
+              Infinix Hot 30 Play - <input class="btn btn-outline-warning rounded-pill" type="button"
+                value="Add to Cart" onclick="add('Infinix Hot 30 Play')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/phone3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Samsung Galaxy A04 (3GB 32GB) Dual Sim With Official Warranty</p>
+              <span>31,999</span>
+              Samsung Galaxy A04 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Samsung Galaxy A04')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/phone4.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Tecno Spark 10 (4GB,128GB) Dual Sim with Official Warranty</p>
+              <span>37,199</span>
+              Tecno Spark 10 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Tecno Spark 10')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/phone12.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Google Pixel 7A (8GB,128GB)-PTA Approved</p>
+              <span>281,149</span>
+              Google Pixel 7A - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Google Pixel 7A')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/phone6.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Samsung Galaxy A04s (4GB,128GB)-Dual Sim With Official Warranty</p>
+              <span>45,299</span>
+              Samsung Galaxy A04s - <input class="btn btn-outline-warning rounded-pill" type="button"
+                value="Add to Cart" onclick="add('Samsung Galaxy A04s')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/phone10.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Tecno Camon 20 (8GB,256GB) Dual Sim With Official Warranty</p>
+              <span>53,999</span>
+              Tecno Camon 20 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Tecno Camon 20')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/phone8.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Itel A27 (2GB,32GB) Dual Sim With Official Warranty</p>
+              <span>19,499</span>
+              Itel A27 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Itel A27')">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="product py-5">
+    <div class="container-fluid">
+      <img src="banner/banner3.png" class="img-fluid" width="100%" alt="">
+      <h1 class="py-5" id="phone">Tablets</h1>
+      <div class="row pt-5">
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple iPad 9th Generation 64GB Wi-Fi</p>
+              <span>93,999</span>
+              Apple iPad 9th - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple iPad 9th')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet2.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple iPad Mini 6 (Wi-Fi, 64GB) 2021</p>
+              <span>135,999</span>
+              Apple iPad Mini 6 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple iPad Mini 6')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Samsung Galaxy Tab S6 LITE P610 (4GB,64GB) WiFi</p>
+              <span>84,999</span>
+              Sumsung Galaxy - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Sumsung Galaxy')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet4.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple iPad Air 5 256GB WiFi (2022)</p>
+              <span>220,999</span>
+              Apple iPad Air 5 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple iPad Air 5')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet5.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Samsung Galaxy Tab A8 X200 (4GB,64GB) WIFI</p>
+              <span>56,299</span>
+              Sumsung Galaxy Tab - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Sumsung Galaxy Tab')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet6.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple iPad Pro 11inch 256GB Wifi M2</p>
+              <span>290,999</span>
+              Apple iPad Pro - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple iPad Pro')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet7.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple iPad 10th Generation 64GB Wi-Fi</p>
+              <span>139,999</span>
+              Apple iPad 10th - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple iPad 10th')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/tablet8.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Amazon Kindle Paperwhite E-Reader 11th Generation 6.8″ Display 16GB</p>
+              <span>54,999</span>
+              Amazon Kindle - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Amazon Kindle')">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="product py-5">
+    <div class="container-fluid">
+      <img src="banner/banner4.jpg" class="img-fluid" width="100%" alt="">
+      <h1 class="py-5" id="phone">Smart Watch</h1>
+      <div class="row pt-5">
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w1.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Soundpeats Watch Pro 1 Smartwatch</p>
+              <span>10,499</span>
+              Soundpeats Watch - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Soundpeats Watch')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w2.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Realme Watch 2 Pro</p>
+              <span>13,999</span>
+              Realme Watch 2 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Realme Watch 2')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w3.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Redmi Watch 2 Lite Smart Watch</p>
+              <span>13,999</span>
+              Redmi Watch 2 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Redmi Watch 2')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w4.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Xiaomi Watch S1 Pro</p>
+              <span>74,499</span>
+              Xiaomi Watch S1 Pro - <input class="btn btn-outline-warning rounded-pill" type="button"
+                value="Add to Cart" onclick="add('Xiaomi Watch S1 Pro')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w5.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Realme Watch 3</p>
+              <span>16,499</span>
+              Realme Watch 3 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Realme Watch 3')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w6.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple Watch SE 40mm Sport Band With Aluminum Case</p>
+              <span>67,499</span>
+              Apple Watch SE - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple Watch SE')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w7.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Redmi Watch 3 Active Smart Watch</p>
+              <span>11,999</span>
+              Redmi Watch 3 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Redmi Watch 9')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/w8.gif" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Huawei Watch GT2 46mm Classic Edition Smart Watch</p>
+              <span>48,499</span>
+              Huawei Watch GT2 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Huawei Watch GT2')">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="product py-5">
+    <div class="container-fluid">
+      <img src="banner/banner5.png" class="img-fluid" width="100%" alt="">
+      <h1 class="py-5" id="phone">Laptop</h1>
+      <div class="row pt-5">
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple Macbook Air MQKV3 M2 Chip 8-Core CPU 10-Core GPU 8GB 512GB SSD 15.3-Inch Liquid
+                Retina</p>
+              <span>474,999</span>
+              Apple Macbook - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple Macbook')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop2.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple Macbook Air MQKV3 M2 Chip 8-Core CPU 10-Core GPU 8GB 512GB SSD 15.3-Inch Liquid
+                Retina</p>
+              <span>474,999</span>
+              Apple Macbook Air - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple Macbook Air')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple Macbook Pro MNW93 M2 Pro Chip 12-Core CPU 19-Core GPU 16GB 1TB SSD 16‑inch
+                Liquid Retina XDR</p>
+              <span>819,999</span>
+              Apple Macbook Pro - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple Macbook Pro')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop4.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Apple Macbook Pro MNW93 M2 Pro Chip 12-Core CPU 19-Core GPU 16GB 1TB SSD 16‑inch
+                Liquid Retina XDR</p>
+              <span>599,999</span>
+              Apple Macbook - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Apple Macbook')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop11.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Asus Zenbook Flip15 Q508UG AMD Ryzen 7 8GB 256GB SSD 2GB MX450 GPU 15.6-Inch FHD
+                Touch Win 11</p>
+              <span>179,999</span>
+              Asus Zenbook - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Asus Zenbook')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop6.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Dell Latitude 7410 Core i5 10th Gen 16GB 256GB SSD 14-Inch FHD Touch Win 10 Pro</p>
+              <span>219,999</span>
+              Dell Latitude 7410 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Dell Latitude 7410')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop7.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white pt-2">
+              <p class="card-text"> Dell Latitude E5430 Core i7 12th Gen 16GB 512GB SSD 14-Inch FHD Win 11 </p>
+              <br>
+              <span>279,999</span>
+              Dell Latitude - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Dell Latitude')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/laptop8.jpg" class="img-fluid card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Lenovo Yoga 7 2-in-1 Core i5 13th Gen 8GB 512GB SSD 16-Inch WUXGA IPS Touch Win 11
+              </p>
+              <span>217,999</span>
+              Lenovo Yoga - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Lenovo Yoga')">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="product py-5">
+    <div class="container-fluid">
+      <img src="banner/banner7.webp" class="img-fluid" width="100%" alt="">
+      <h1 class="py-5" id="phone">Wireless Earbuds</h1>
+      <div class="row pt-5">
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds1.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">M20 TWS Wireless Bluetooth Earbuds</p>
+              <span>1,349</span>
+              M20 Tws - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('M20 Tws')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds2.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Airs Pro Tws Bluetooth Earbuds</p>
+              <span>1,199</span>
+              Airs Pro - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Airs Pro')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds3.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">M28 TWS Wireless Earbuds</p>
+              <span>1,499</span>
+              M28 TWS - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('M28 TWS')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds4.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Audionic Airbud 325 Wireless Earbuds</p>
+              <span>3,899</span>
+              Audionic Airbud - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Audionic Airbud')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds5.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Lenovo LP40 True Wireless Headphones</p>
+              <span>2,199</span>
+              Lenovo LP40 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Lenovo LP40')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds6.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Lenovo XT20 True Wireless Earbuds</p>
+              <span>2,499</span>
+              Lenovo XT20 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Lenovo XT20')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds7.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Lenovo LP40 Pro True Wireless Earbuds</p>
+              <span>2,999</span>
+              Lenovo LP40 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Lenovo LP40')">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card border-0">
+            <div class="card-body py-5 bg-light">
+              <img src="products/earbuds8.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-footer border-0 text-center bg-white">
+              <p class="card-text">Lenovo XT92 TWS Wireless Earbuds</p>
+              <span>2,999</span>
+              Lenovo XT92 - <input class="btn btn-outline-warning rounded-pill" type="button" value="Add to Cart"
+                onclick="add('Lenovo XT92')">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- review start -->
+  <section class="review">
+    <div class="container-fluid form-control">
+      <h1 class="text-center py-1">Customer's Reviews</h1>
+      <p class="text-center">What our Customers say about Wireless World.pk</p>
+      <div class="row m-auto">
+        <div class="col-sm-6 ">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/people1.jpeg" class="img-fluid w-25 border rounded-circle" alt="">
+              <h5 class="card-title text-warning">James</h5>
+              <span class="text-light">25 August 2023</span>
+              <p class="card-text text-warning">'1st experience with wireless world and it was amazing. Delivered within 24 hours. Amazing keep it up.'.</p>
+              <div class="star">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/people2.jpeg" class="img-fluid w-25 border rounded-circle" alt="">
+              <h5 class="card-title text-warning">Robert</h5>
+              <span class="text-light">18 August 2023</span>
+              <p class="card-text text-warning">'1st experience with wireless world Best phone and reasonable price thank you so much #Wireless World🎉❤️'.</p>
+              <div class="star">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-auto">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/people5.jpg" class="img-fluid w-25 border rounded-circle" alt="">
+              <h5 class="card-title text-warning">Jennifer</h5>
+              <span class="text-light">24 August 2023</span>
+              <p class="card-text text-warning">'It's 100% original same as shown in pics with fastest delivery within 1 daynice'.</p>
+              <div class="star">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body bg-dark">
+              <img src="images/peple4.jpg" class="img-fluid w-25 border rounded-circle" alt="">
+              <h5 class="card-title text-warning">John</h5>
+              <span class="text-light">10 August 2023</span>
+              <p class="card-text text-warning">'Very nice product I love wireless world thank you for the fast delivery'.</p>
+              <div class="star">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star-half text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- review end -->
+  <!--  start -->
+
+  <!-- template start -->
+  <section class="template bg-light">
+    <div class="container-fluid pt-5">
+      <div class="row bg-light">
+        <div class="col-md-6 py-5 p-5 text-center">
+          <img src="images/sumsung.png" class="img-fluid w-50" alt="">
+        </div>
+        <div class="col-md-6 py-5 pt-5 p-5">
+          <h1 class="">Download The Wireless World App Now</h1>
+          <p class="text-secondary">
+            Fast, Simple & Delightful.
+            All it takes is 30 seconds to Download.
+          </p>
+          <div class="">
+            <a href="#"><img src="images/app.store.png" width="100px" class="img-fluid" alt=""></a>
+            <a href="#"><img src="images/google.play.png" width="100px" class="img-fluid" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- template end -->
+
+  <div class="container-fluid mt-4 bg-white justify-content-lg-center">
+    <div class="row mt-4">
+      <h3 class="text-center text-warning bg-dark">All Brand List</h3>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/samsung.jpg" alt="" class="img-fluid pt-4"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/apple.jpg" alt="" class="img-fluid pt-4"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/nokia.jpg" alt="" class="img-fluid pt-4"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/lg.png" alt=""  class="img-fluid w-50 pt-2"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/moto.png" alt="" class="img-fluid w-50 pt-2"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/alcatel.jpg" alt="" class="img-fluid w-50 pt-4"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/sony.png" alt="" class="img-fluid  w-50 pt-3"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/htc 1.png" alt="" class="img-fluid  w-50 pt-4"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/blackberry.jpg" alt="" class="img-fluid  w-50 pt-3"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/huawei.jpg" alt="" class="img-fluid  w-25 pt-4 "></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/z t c.png" alt="" class="img-fluid  w-50 pt-2"></div>
+      <div class="col-2 bg-white border border-dark text-center"><img src="images/xiaomi.svg" alt="" class="img-fluid  w-25 pt-4"></div>
+      <div class="row p-5">
+        <div class="col-sm-3 text-center"><img src="images/pta-approved.svg" alt="" class="img-fluid w-25">
+          <h6 class="text-center">PTA Approved</h6>
+          <p class="text-secondary text-center">Mobile Phone</p>
+        </div>
+        <div class="col-sm-3 text-center"><img src="images/1year-warranty.svg" alt="" class="img-fluid">
+          <h6 class="text-center">1 Year warrenty</h6>
+          <p class="text-secondary text-center">Brand Warrenty</p>
+        </div>
+        <div class="col-sm-3 text-center"><img src="images/48-shipping.svg" alt="" class="img-fluid w-25">
+          <h6 class="text-center">48hr Delivery</h6>
+          <p class="text-secondary text-center">Open Parcel</p>
+        </div>
+        <div class="col-sm-3 text-center"><img src="images/free-delivery.svg" alt="" class="img-fluid w-25">
+          <h6 class="text-center pt-4">Free Delivery</h6>
+          <p class="text-secondary text-center">All Our Pakistan</p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <footer class="container-fluid bg-dark">
+    <div class="row">
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>About</i></h5>
+
+        <p>About us</p>
+        <p>Telemart corporate</p>
+        <p>Takaful islamic insurance</p>
+        <p>Careers</p>
+
+      </div>
+
+      <div class="col-sm-2 bg-dark text-light ">
+        <h5 class="text-warning"><i>Help</i></h5>
+        <p>Payment information</p>
+        <p>Shiping information</p>
+        <p>Faqs</p>
+        <p>Telemart mart offline stores</p>
+        <p>Help desk / support</p>
+        <p>Smart phone financing</p>
+
+      </div>
+
+
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>Policy</i></h5>
+        <p>Return policy</p>
+        <p>Terms & Condition</p>
+        <p>Privacy</p>
+        <p>Warranty</p>
+        <p>price beating</p>
+
+      </div>
+
+
+
+
+
+
+      <div class="col-sm-2 bg-dark text-light">
+
+        <h5 class="text-warning"><i>Social</i></h5>
+
+        <i class="fa-brands fa-square-facebook"> </i> Facebook
+        <br>
+        <i class="fa-brands fa-square-twitter"></i> Twitter
+        <br>
+        <i class="fa-brands fa-instagram"></i> Instagaram
+        <br>
+        <i class="fa-brands fa-snapchat"></i> Snapchat
+        <br>
+        <i class="fa-brands fa-youtube"></i> Youtube
+        <br>
+        <i class="fa-brands fa-tiktok"></i> Tiktok
+      </div>
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>Free Buisness Services</i></h5>
+        <p>URL Shortner</p>
+        <p>Task Manager</p>
+        <p>ERP</p>
+      </div>
+
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>Registerd Adress</i></h5>
+        <p>Telemart pVT Limited</p>
+        <p>Suit 401-406, 4th Floor,Al-khaleej</p>
+        <p>Tower Plot#C-24 B.M.C.H.S Shaheed-e-Millat</p>
+        <p>Karachi Pakistan</p>
+      </div>
+    </div>
+    <div class="bg-warning p-2">
+      <p class="float-end"><a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-dark"></i></a></p>
+      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+</body>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+<script src="/fontawesome-free-6.4.2-web/js/all.js"></script>
+<script>
+  var x = 0;
+  document.getElementById("c").innerText = x;
+  function add(val) {
+    document.getElementById("hello").innerHTML +="<li>"+val+"<input type='button' class='fa-solid fa-trash' onclick='remove()'></li>";
+    x = x + 1;
+    document.getElementById("c").innerText = x;
+  }
+  function remove(val) {
+    var listItem = document.getElementsByTagName("li");
+    for (var i = 0; i < listItem.length; i++) {
+      listItem[i].onclick = function () {
+        this.parenNode.removeChild(this);
+      }
+
+    }
+    x = x - 1;
+    document.getElementById("c").innerText = x;
+  }
+
+
+
+
+</script>
+
+</html>

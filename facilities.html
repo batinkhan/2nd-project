@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireless World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/logo2.webp">
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="container-fluid fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.webp" class="img-fluid" width="50px" alt=""><span class="text-warning">Wireless
+            World</span>
+        </a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <form class="d-flex">
+              <div class="input-group">
+                <input type="text" placeholder="Search.." class="form-control">
+                <input type="text" placeholder="Enter Location" class="form-control">
+                <button class="input-group-text btn btn-outline-warning"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="btn btn-warning rounded-pill m-1" href="login.html">Log In <i class="fa fa-user-circle"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-warning rounded-pill m-1" href="signup.html">Sign Up <i
+                  class="fa fa-user-plus"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto my-lg-0">
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="facilities.html">FACILITIES</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="contectus.html">CONTACT US</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="franchise.html">FRANCHISE</a>
+            </li>
+            <!-- <li class="nav-item mx-auto">
+              <a class="nav-link text-dark" href="form.html">SHOPPING CART</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link  text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                TOP CATAGORIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="samsung.html">Sumsung </a></li>
+                <li><a class="dropdown-item" href="iphone.html">Apple </a></li>
+                <li><a class="dropdown-item" href="noika.html">Nokia </a></li>
+                <li><a class="dropdown-item" href="lg.html">LG </a></li>
+                <li><a class="dropdown-item" href="moto.html">Motorola </a></li>
+                <li><a class="dropdown-item" href="alcatel.html">Alcatel </a></li>
+                <li><a class="dropdown-item" href="cat.html">CAT </a></li>
+                <li><a class="dropdown-item" href="sony.html">Sony </a></li>
+                <li><a class="dropdown-item" href="htc.html">HTC </a></li>
+                <li><a class="dropdown-item" href="balck.html">Blackberry </a></li>
+                <li><a class="dropdown-item" href="huwwie.html">Huawei </a></li>
+                <li><a class="dropdown-item" href="zte.html">ZTE </a></li>
+                <li><a class="dropdown-item" href="redmi.html">Xiaomi </a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item mx-auto">
+              <div class="dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-cart-shopping"><span class="badge bg-dark text-warning"><b id="c">0</b></span></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <h3 class="text-center bg-dark text-warning">Add To Cart</h3>
+                  <div class="bg-warning" style="width: 300px;height: 300px;padding: 20px;" id="cart">
+                    <h5>Products Item</h5>
+                    <ol id="hello"></ol>
+                  </div>
+                  <footer class="footer bg-dark p-2">
+                    <button class="btn btn-danger form-control rounded-pill my-1"
+                      href="facilities.html">Checkout</button>
+                    <button class="btn btn-outline-warning form-control rounded-pill my-1">View Cart</button>
+                  </footer>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <img src="images/bismillah.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid pt-5 p-5">
+    <div class="row p-5 pt-5">
+      <h4 class="text- text-center pt-5 p-5">FACILITIES</h4>
+
+      <div class="col-lg-12 text-center"><img src="photos/slider pics/facilities 1.jpg" alt="" class="img-fluid"
+          width="60%">
+      </div>
+      <h5 class="text-center text-info"> For Custumer Facilities</h5>
+      <p>
+        Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore earum voluptatibus aspernatur
+        aut quasi porro accusantium rerum ut! Porro deserunt sequi commodi ab tempora optio, consectetur in quam
+        deleniti
+        cumque ex pariatur explicabo quo non accusamus dignissimos quos ea dicta? Molestiae totam a modi et amet
+        perferendis voluptatum sit, provident iste dolorum soluta, repudiandae accusantium cum recusandae.
+        Necessitatibus
+        fuga voluptas in ducimus facere saepe, veniam atque a suscipit nulla dicta quas aspernatur est, temporibus
+        pariatur enim sint provident eveniet sunt ab. Veritatis iusto earum, maiores perspiciatis voluptatibus sint
+        exercitationem nobis. Aut nobis dolore suscipit, voluptas excepturi doloribus officia porro mollitia cumque
+        laudantium illo magni quisquam et. Minima numquam molestiae facere. Ipsa reiciendis explicabo placeat autem,
+        ullam
+        magnam eveniet aliquid, aperiam quisquam quo qui ex temporibus possimus voluptate tenetur natus impedit
+        necessitatibus rerum quam maiores sit odio maxime! In, laboriosam. Repudiandae molestias animi delectus ad at,
+        repellat porro accusantium. Magnam laborum, aut accusamus doloribus nesciunt beatae facere quibusdam, iste fugit
+        expedita vero error corrupti, consequuntur distinctio. Modi optio perspiciatis, tempora possimus aspernatur esse
+        perferendis nostrum numquam explicabo illum rerum! In minima facere inventore eaque nihil, dolor facilis
+        repellendus quos, dolorem sequi ab et iste officiis dolore doloremque accusantium omnis voluptatem. dolor sit
+        amet
+        consectetur adipisicing elit. Temporibus eum assumenda odit iusto ex perferendis laboriosam animi ab fuga
+        officiis
+        numquam libero sed fugit repellat veniam cum, quibusdam molestias, voluptates voluptas sapiente unde? Commodi
+        laborum sed dicta soluta voluptate? Aut ab exercitationem vitae, modi consequatur provident architecto. Id esse
+        officiis suscipit assumenda, iusto eligendi est, expedita molestiae ad quibusdam quam cupiditate! Facilis
+        dolorum
+        nemo officia veritatis fugiat, ratione aperiam accusamus laborum placeat numquam rerum vitae eius, quo facere
+        nobis quam non! Sequi, deleniti itaque praesentium culpa quia dolor ipsum pariatur. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Est reprehenderit itaque possimus nesciunt? Dignissimos eum vel incidunt vero,
+        illo
+        minima architecto inventore exercitationem? Illum asperiores quibusdam assumenda omnis voluptatibus dolores
+        laudantium a nulla qui voluptatem mollitia est autem beatae corporis laboriosam, rem quas, quaerat provident
+        officia tempore eligendi architecto molestias.
+      </p>
+    </div>
+
+    <div class="row text-danger">
+      <div class="col-lg-12 text-center"><img src="photos/slider pics/35.jpg" alt="" class="img-fluid">
+      </div>
+
+      <h6 class="text-danger text-center">For All Brands</h6>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet quidem dolores dolorem quos beatae
+        cupiditate. Iure repellat aliquam, dolorum ipsum perferendis, numquam commodi ipsa provident dolore voluptates
+        minus nam ducimus praesentium natus earum? Aliquam beatae error cumque accusamus laborum ea, sequi enim
+        consequatur fugit porro! Necessitatibus tempore, voluptates quaerat vero quam doloremque odio neque est porro
+        consequatur, veritatis eveniet debitis, eaque tenetur aut iure repellat. Praesentium explicabo saepe soluta. Ab
+        aliquam quos asperiores facilis culpa doloribus totam voluptas obcaecati aperiam tempore, quidem, dolores
+        eligendi
+        accusamus repudiandae porro dolorem? Cupiditate eum fugit, ullam quos cum et in adipisci maiores harum?
+      </p>
+
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center"><img src="photos/slider pics/mobile repair.jpg" alt="" class="img-fluid"></div>
+
+      <h6 class="text-secondary text-center">Mobile facilities</h6>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet tempore, laborum, molestias, quod ducimus et
+        blanditiis impedit culpa ipsa dicta accusamus. Eum deleniti nam, alias, maxime recusandae provident commodi
+        reiciendis consequatur soluta accusantium, quae dolorem neque sunt ratione! Harum perferendis quibusdam repellat
+        maiores, sed neque numquam, corrupti vitae ut distinctio deleniti tempora? Aperiam consectetur voluptatum,
+        asperiores corrupti voluptate laborum, quae, blanditiis consequuntur cumque impedit ratione quaerat vitae.
+        Blanditiis tenetur iusto id error maxime quaerat ratione modi totam, consequatur fugit minus corrupti doloremque
+        sequi velit aut consectetur laudantium, cum sit cupiditate pariatur quas. Consequuntur aut aspernatur vero
+        tempora
+        ad eos vel.
+      </p>
+
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-lg-12 text-center"><img src="photos/slider pics/installment.jpg" alt="" class="img-fluid"></div>
+
+      <h6 class="text-info text-center">Mobile Installment</h6>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet tempore, laborum, molestias, quod ducimus et
+        blanditiis impedit culpa ipsa dicta accusamus. Eum deleniti nam, alias, maxime recusandae provident commodi
+        reiciendis consequatur soluta accusantium, quae dolorem neque sunt ratione! Harum perferendis quibusdam repellat
+        maiores, sed neque numquam, corrupti vitae ut distinctio deleniti tempora? Aperiam consectetur voluptatum,
+        asperiores corrupti voluptate laborum, quae, blanditiis consequuntur cumque impedit ratione quaerat vitae.
+        Blanditiis tenetur iusto id error maxime quaerat ratione modi totam, consequatur fugit minus corrupti doloremque
+        sequi velit aut consectetur laudantium, cum sit cupiditate pariatur quas. Consequuntur aut aspernatur vero
+        tempora
+        ad eos vel.
+      </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+      <div class="col-lg-12 text-center"><img src="photos/slider pics/exchange 1.jpg" alt="" class="img-fluid"></div>
+
+      <h6 class="text-primary text-center">For All Brands </h6>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet tempore, Lorem ipsum dolor, sit amet
+        consectetur
+        adipisicing elit. Dicta itaque libero consectetur vel ratione. Minus sed praesentium sapiente iste alias tempora
+        doloremque fugit soluta voluptatem quod velit magni, beatae dignissimos molestiae itaque odio dicta hic mollitia
+        expedita officia? At, quisquam error, reiciendis incidunt soluta nisi ut repudiandae esse beatae, rem similique
+        quidem. Nulla sit modi harum officiis eveniet nobis ducimus fugit ab, quod pariatur libero blanditiis
+        exercitationem dolor quidem architecto eius illum, possimus, laudantium sed? Nisi culpa eius consectetur illo
+        animi, vel nam, sequi aliquid sunt maiores aut dolorem fugiat sit iste doloribus rem. Incidunt, odit fugiat
+        iusto
+        architecto numquam neque sint laborum quod delectus placeat? Recusandae, expedita! Velit, at cumque quos alias
+        nesciunt suscipit quibusdam eveniet hic sed unde voluptate quo? Nobis, facere veniam! Nostrum ullam delectus
+        iste
+        eligendi rerum rem excepturi laboriosam in dicta cupiditate placeat perferendis, eius unde veniam consequatur
+        omnis! Blanditiis facilis sit numquam magni, expedita magnam! Dignissimos asperiores eaque similique nesciunt
+        accusamus cum, voluptates quibusdam, autem mollitia porro deleniti animi tenetur hic earum nemo veniam corporis
+        harum culpa impedit. Recusandae quam maiores, aspernatur eos explicabo aperiam quibusdam dolor necessitatibus
+        nostrum tempora consequuntur omnis ad amet maxime itaque officiis, obcaecati, delectus hic illo! Officiis, sit
+        hic? laborum, molestias, quod ducimus et blanditiis impedit culpa ipsa dicta accusamus. Eum deleniti nam, alias,
+        maxime recusandae provident commodi reiciendis consequatur soluta accusantium, quae dolorem neque sunt ratione!
+        Harum perferendis quibusdam repellat maiores, sed neque numquam, corrupti vitae ut distinctio deleniti tempora?
+        Aperiam consectetur voluptatum, asperiores corrupti voluptate laborum, quae, blanditiis consequuntur cumque
+        impedit ratione quaerat vitae. Blanditiis tenetur iusto id error maxime quaerat ratione modi totam, consequatur
+        fugit minus corrupti doloremque sequi velit aut consectetur laudantium, cum sit cupiditate pariatur quas.
+        Consequuntur aut aspernatur vero tempora ad eos vel.
+      </p>
+
+    </div>
+
+  </div>
+
+  <footer class="container-fluid bg-dark">
+    <div class="row">
+
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>About</i></h5>
+
+        <p>About us</p>
+        <p>Telemart corporate</p>
+        <p>Takaful islamic insurance</p>
+        <p>Careers</p>
+
+      </div>
+
+      <div class="col-sm-2 bg-dark text-light ">
+        <h5 class="text-warning"><i>Help</i></h5>
+        <p>Payment information</p>
+        <p>Shiping information</p>
+        <p>Faqs</p>
+        <p>Telemart mart offline stores</p>
+        <p>Help desk / support</p>
+        <p>Smart phone financing</p>
+
+      </div>
+
+
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>Policy</i></h5>
+        <p>Return policy</p>
+        <p>Terms & Condition</p>
+        <p>Privacy</p>
+        <p>Warranty</p>
+        <p>price beating</p>
+
+      </div>
+
+
+
+
+
+
+      <div class="col-sm-2 bg-dark text-light">
+
+        <h5 class="text-warning"><i>Social</i></h5>
+
+        <i class="fa-brands fa-square-facebook"> </i> Facebook
+        <br>
+        <i class="fa-brands fa-square-twitter"></i> Twitter
+        <br>
+        <i class="fa-brands fa-instagram"></i> Instagaram
+        <br>
+        <i class="fa-brands fa-snapchat"></i> Snapchat
+        <br>
+        <i class="fa-brands fa-youtube"></i> Youtube
+        <br>
+        <i class="fa-brands fa-tiktok"></i> Tiktok
+      </div>
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>Free Buisness Services</i></h5>
+        <p>URL Shortner</p>
+        <p>Task Manager</p>
+        <p>ERP</p>
+      </div>
+
+      <div class="col-sm-2 bg-dark text-light">
+        <h5 class="text-warning"><i>Registerd Adress</i></h5>
+        <p>Telemart pVT Limited</p>
+        <p>Suit 401-406, 4th Floor,Al-khaleej</p>
+        <p>Tower Plot#C-24 B.M.C.H.S Shaheed-e-Millat</p>
+        <p>Karachi Pakistan</p>
+      </div>
+    </div>
+    <div class="bg-warning p-2">
+      <p class="float-end"><a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-dark"></i></a></p>
+      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
